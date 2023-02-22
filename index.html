@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Author" content="Pritam Debnath">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GO-PLUS-INC-ASSIGNMENT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <form action="" id="form">
+    <label for="full_name">Full Name -
+      <input id="full_name" name="full_name" placeholder="Add a  name" type="text" required value="" maxlength="16" />
+    </label>
+
+    <label for="email">Email -
+      <input id="email" name="email" placeholder="Add an email" type="email" required value="" />
+    </label>
+
+    <label for="date_of_birth">Date of birth -
+      <input id="date_of_birth" name="date_of_birth" placeholder="Add date of birth" type="date" required
+        value='' max="2023-02-23" />
+    </label>
+
+    <label id="gender" class="flex" required>Gender -
+      Male
+      <input id="male" name="gender" placeholder="gender" type="radio" value="male" required checked />
+
+      Female
+      <input id="female" name="gender" placeholder="female" type="radio" value="female" required />
+
+      Other
+      <input id="other" name="gender" placeholder="other" type="radio" value="other" required />
+    </label>
+
+
+    <label for="hobby">Hobby -
+      <input id="hobby" name="hobby" placeholder="Add a hobby" type="text" value="" required />
+    </label>
+
+    <select name="country" id="country" required>
+      <option value="">select country</option>
+    </select>
+
+    <select name="state" id="state" required>
+      <option value="">select state </option>
+    </select>
+
+    <select name="city" id="city" required>
+      <option value="">select city </option>
+    </select>
+
+    <button type="submit" id="submit">Add</button>
+
+  </form>
+
+
+  <table id="userList">
+    <th>Full Name</th>
+    <th>Email </th>
+    <th>Date of birth</th>
+    <th>Gender</th>
+    <th>Hobby</th>
+    <th>Country</th>
+    <th>State</th>
+    <th>City</th>
+    <th>Modification</th>
+    <th>Deletion</th>
+    <!-- content will come from javascript -->
+  </table>
+
+
+
+
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
